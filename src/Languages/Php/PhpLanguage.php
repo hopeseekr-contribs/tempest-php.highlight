@@ -8,6 +8,7 @@ use Tempest\Highlight\Languages\Base\BaseLanguage;
 use Tempest\Highlight\Languages\DocComment\Injections\DocCommentInjection;
 use Tempest\Highlight\Languages\Php\Injections\AttributeInjection;
 use Tempest\Highlight\Languages\Php\Injections\HeredocInjection;
+use Tempest\Highlight\Languages\Php\Injections\PhpTypeInjection;
 use Tempest\Highlight\Languages\Php\Patterns\AttributeTypePattern;
 use Tempest\Highlight\Languages\Php\Patterns\CatchTypePattern;
 use Tempest\Highlight\Languages\Php\Patterns\ClassNamePattern;
@@ -54,6 +55,7 @@ class PhpLanguage extends BaseLanguage
             new HeredocInjection(),
             new DocCommentInjection(),
             new AttributeInjection(),
+            new PhpTypeInjection(),
         ];
     }
 
@@ -162,7 +164,7 @@ class PhpLanguage extends BaseLanguage
             new ClassNamePattern(),
             new ReturnTypePattern(),
             new StaticClassCallPattern(),
-            new ParameterTypePattern(),
+//            new ParameterTypePattern(),
             new NewObjectPattern(),
             new InstanceOfPattern(),
             new UseAsPattern(),
