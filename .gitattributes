@@ -1,0 +1,15 @@
+/tests               export-ignore
+/.gitattributes      export-ignore
+/.github             export-ignore
+/.gitignore          export-ignore
+.gitkeep             export-ignore
+/.travis.yml         export-ignore
+/phpstan.xml         export-ignore
+/phpunit.xml         export-ignore
+/CHANGELOG.md        export-ignore
+/composer.lock       export-ignore
+/phpbench.js         export-ignore
+/test-server.php     export-ignore
+/test-terminal.php   export-ignore
+
+/.php-cs-fixer.dist.php  export-ignore
